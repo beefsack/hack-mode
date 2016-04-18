@@ -20,6 +20,11 @@
 (eval-when-compile
   (require 'regexp-opt))
 
+;; Work around emacs bug#18845
+(eval-and-compile
+  (when (and (= emacs-major-version 24) (>= emacs-minor-version 4))
+    (require 'cl)))
+
 (defgroup hack nil
   "Major mode `hack-mode' for editing Hack code."
   :prefix "hack-"
