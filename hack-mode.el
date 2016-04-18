@@ -1,5 +1,4 @@
-;;; -*- lexical-binding: t -*-
-;;; hack-mode.el --- Major mode for the Hack programming language
+;;; hack-mode.el --- Major mode for the Hack programming language -*- lexical-binding: t -*-
 
 ;;; Commentary:
 ;; 
